@@ -9,7 +9,7 @@ headers = {
 }
 
 url = 'https://aaas.10086.cn/wisdom-admin/abilitySubOrder/export?'
-cookie_str = 'XSRF-TOKEN=fb5138a6-d898-4d74-9fe9-1c3e7b29ff87; SESSION=ZDc4ZmY2OWUtZDZlNS00YTVhLWI3ZjAtYzE4MjFkZGZhNWMz; mobile=8578-42273-5039-36952; WT_FPC=id=212e3b48555dcbcbc271709101092514:lv=1713228310962:ss=1713227570153'
+cookie_str = 'XSRF-TOKEN=94fb7773-a6f1-4355-a723-767092bcc809; SESSION=MGFiODU0ZmItNTk3OS00YzAwLWEzMTgtNzEzYWUyMDk3NGI1; mobile=4482-62753-5048-36956; WT_FPC=id=212e3b48555dcbcbc271709101092514:lv=1718777779713:ss=1718777720765'
 headers.update({'Cookie': cookie_str}
                )
 # https://aaas.10086.cn/wisdom-admin/abilitySubOrder/export?currentPage=1&pageSize=10&subOrderId=&apiName=&status=&linkManName=&contrStatus=&appSceneInternal=&middleGroundId=&isPlatform=&providerCode=&apiProviderCode=&beginDateTime=&endDateTime=&statusUpdateTimeStart=&statusUpdateTimeEnd=
@@ -19,7 +19,7 @@ print("response.apparent_encoding", response.apparent_encoding)
 print("response.encoding", response.encoding)
 
 if response.status_code == 200:
-    with open("能力订购单_20240422.xls", "wb") as file:
+    with open("能力订购单_20240619.xls", "wb") as file:
         file.write(response.content)
         file_count += 1
 print("response.apparent_encoding", response.apparent_encoding)
